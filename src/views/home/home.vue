@@ -1,19 +1,18 @@
 <template>
     <div>
         <HelloWorld></HelloWorld>
+        {{data}}
     </div>
 </template>
 
-<script>
-    import {useStore} from 'vuex'
-    import {onMounted, computed} from 'vue'
+<script setup>
+    import {onMounted, ref} from 'vue'
+    import {useGetData} from '../../api/home/home'
+    import {CheckMobilePhone} from '../../utils/exp'
 
-    export default {
-        name: "home",
-        components: {},
-        setup(props, context) {
-        },
-    }
+    const {data, task} = useGetData();
+    task();
+    console.log(CheckMobilePhone('15308192039'))
 </script>
 
 <style scoped>

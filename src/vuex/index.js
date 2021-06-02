@@ -3,7 +3,7 @@ import {createStore} from 'vuex'
 
 let store = createStore({
     state: {
-        placeName: '',
+        placeName: '54',
     },
     mutations: {},
     actions: {},
