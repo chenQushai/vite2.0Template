@@ -1,0 +1,48 @@
+* ::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  background-color: #ffffff;
+}
+
+* ::-webkit-scrollbar-thumb {
+  border-radius: inherit;
+  background-color: rgba(144, 147, 153, 0.5);
+}
+
+//跳转标签
+a {
+  text-decoration: none;
+  color: #1890FF;
+}
+
+.container {
+  background-color: #ffffff;
+}
+
+
+
+
+
+
+
+//分页框
+.pagination {
+  background: #ffffff;
+  overflow: auto;
+  padding: 5px 10px;
+  border: 1px solid #EBEEF5;
+  border-top: none;
+  border-bottom: none;
+}
+
+//自定义分栏标签
+.divider-tag {
+  position: absolute;
+  font-size: 15px;
+  font-weight: bold;
+  left: 10px;
+  top: -10px;
+  background-color: white;
+  color: #1890FF;
+}
+

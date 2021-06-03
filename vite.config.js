@@ -9,4 +9,9 @@ export default defineConfig({
         vuexModulesAutoload()
     ],
     base: './',
+    server: {
+        port: 3001,
+        open: true,
+        cors: true
+    }
 })

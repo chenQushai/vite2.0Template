@@ -6,15 +6,20 @@
 </template>
 
 <script setup>
-    import {onMounted, ref} from 'vue'
+    import {onMounted, ref,reactive} from 'vue'
     import {useGetData} from '../../api/home/home'
-    import {CheckMobilePhone} from '../../utils/exp'
-
-    const {data, task} = useGetData();
-    task();
-    console.log(CheckMobilePhone('15308192039'))
 </script>
 
-<style scoped>
-
+<style lang="scss" scoped>
+    .home {
+        width: 100px;
+        height: 200px;
+        background-color: #44b449;
+        padding: 1px;
+        .inner {
+            width: 20px;
+            height: 30px;
+            background-color: #606266;
+        }
+    }
 </style>
