@@ -60,11 +60,12 @@
     import loginBackImg from '../assets/img/login-bg2.png';
     import logoImg from '../assets/logo.png';
     import leftImgBg from '../assets/logo.png'
-
+    import {useRouter} from 'vue-router'
 
     const loginBg = loginBackImg;
     const logo = logoImg;
     const leftImg = leftImgBg;
+    const router = useRouter();
     let loginLoading = ref(false);
 
     let loginForm = reactive({
@@ -86,6 +87,7 @@
         form.value.validate((valid) => {
             if (valid) {
                 alert('submit!');
+                router.push('/home')
             } else {
                 console.log('error submit!!');
                 return false;
